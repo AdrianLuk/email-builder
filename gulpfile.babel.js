@@ -18,7 +18,7 @@ const PRODUCTION = !!(yargs.argv.production);
 const EMAIL = yargs.argv.to;
 
 gulp.task('build',
-  gulp.series(clean, pages, sass, images, inline, cleanCSS));
+  gulp.series(clean, pages, sass, images, inline));
 
 gulp.task('default',
   gulp.series('build', server, watch));

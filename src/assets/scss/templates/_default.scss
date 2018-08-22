@@ -1,8 +1,10 @@
 // Avoid !important here since everything will be inlined
 * {
   font-family: Arial, sans-serif;
+  word-wrap: nowrap;
 }
-
+$ras-blue: #3388CA;
+$pink: #D2507F;
 body {
 	-webkit-font-smoothing:antialiased;
 	-webkit-text-size-adjust:none;
@@ -17,6 +19,49 @@ body {
 
 .content {
   background-color:#FFFFFF;
+}
+
+.d-block{
+  display: block;
+}
+
+.text-center{
+  text-align: center;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin-bottom: 0;
+}
+h1{
+  font-size: 1.3rem;
+}
+.heading{
+  background: $light-gray;
+}
+th.columns{padding-bottom: 0;}
+
+.bg-blue{
+  background: $ras-blue!important;
+}
+.bg-grey{
+  background: $dark-gray !important;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.social-icon{
+  color: $dark-gray;
+  background: $white!important;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.text-white{
+  color: $white;
+}
+
+.text-pink{
+  color: $pink;
 }
 
 // Make everything here important, or else it won't override your inlined styles
