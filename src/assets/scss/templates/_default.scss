@@ -1,11 +1,13 @@
 // Avoid !important here since everything will be inlined
 * {
   font-family: Arial, sans-serif;
-  word-wrap: nowrap;
 }
 $ras-blue: #3388CA;
 $pink: #D2507F;
 $green: #82BF37;
+$navy: #3D505A;
+$off-white: #f0f0f0;
+
 body {
 	-webkit-font-smoothing:antialiased;
 	-webkit-text-size-adjust:none;
@@ -53,16 +55,23 @@ h1{
   background: $light-gray;
 }
 th.columns{padding-bottom: 0;}
+
 .border{
   border: 1px solid $white;
 }
-.bg-blue{
+.bg{
+  &-blue{
   background: $ras-blue!important;
-}
-.bg-grey{
+  }
+  &-grey{
   background: $dark-gray !important;
+  }
+  &-off-white{
+    background: $off-white !important;
+  }
 }
-.btn-green {
+.btn{
+  &-green {
     td{
       background: $green !important;
       border-color: $green !important;
@@ -72,11 +81,20 @@ th.columns{padding-bottom: 0;}
         border-color: $green !important;
       }
     }
+  }
+  &-white {
+    td{
+      background: $white !important;
+      border-color: $white !important;
+      a{
+        background: $white !important;
+        border-radius: 0;
+        border-color: $white !important;
+        color: $navy !important;
+      }
+    }
+  }
 }
-.text-uppercase{
-  text-transform: uppercase;
-}
-
 .social-icon{
   color: $dark-gray;
   background: $white!important;
@@ -84,14 +102,36 @@ th.columns{padding-bottom: 0;}
   padding: 5px;
 }
 
-.text-white{
+.text{
+  &-white{
   color: $white;
+  }
+  &-pink{
+    color: $pink;
+  }
+  &-uppercase{
+  text-transform: uppercase;
+  }
+  &-navy{
+    color: $navy;
+  } 
 }
 
-.text-pink{
-  color: $pink;
+.p{
+  &-5{
+    padding: 5px;
+  }
+  &-10{
+    padding: 10px;
+  }
 }
-
+.w-100{
+  width: 100% !important;
+}
+.mw-500 {
+  max-width: 500px;
+  margin: auto;
+}
 // Make everything here important, or else it won't override your inlined styles
 @media only screen and (max-width: #{$global-breakpoint}) {
   p {
@@ -100,8 +140,3 @@ th.columns{padding-bottom: 0;}
   }
 }
 
-
-.mw-500 {
-  max-width: 500px;
-  margin: auto;
-}
