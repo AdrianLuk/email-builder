@@ -9,7 +9,7 @@ description: Details For Your Upcoming Job
         <row class="collapse">
             <columns small="12" large="3" valign="middle"><img src="https://www.rentason.ca/wp-content/uploads/2018/08/logo.png" alt="Rentason Arrow"></columns>
             <columns small="12" large="6" valign="middle">
-                <h1 class="text-center text-uppercase"><strong><span style="font-size: 1.5rem;">Hello</span><br> ${Leads.First Name},</strong></h1>
+                <h1 class="text-center text-uppercase"><strong><span style="font-size: 1.5rem;">Hello</span><br> ${Estimates.Contact Name},</strong></h1>
             </columns>
             <columns small="12" large="3" valign="middle"><img src="https://www.rentason.ca/wp-content/uploads/2018/08/reservation.png"
                     alt="moving employee"></columns>
@@ -17,7 +17,7 @@ description: Details For Your Upcoming Job
     </container>
     <spacer size="20"></spacer>
     <container>
-        <p class="text-center">We appreciate the opportunity to present thish estimate for your upcoming ${Estimates.Service(s) Provided} job. The full details are provided in the attached .pdf</p>
+        <p class="text-center">We appreciate the opportunity to present this estimate for your upcoming ${Estimates.Service(s) Provided} job. The full details are provided in the attached .pdf</p>
         <spacer size="20"></spacer>
         <center>
             <p class="text-center">Please review all of the terms and conditions, pricing and details carefully.</p>
@@ -34,9 +34,24 @@ description: Details For Your Upcoming Job
             </columns>
         </row>
     </container>
+    <spacer></spacer>
+    <container class="mw-500">
+        <p style="font-style: italic;" class="text-center text-pink">* Once you have accepted the estimate, a <strong>14 day cancellation policy</strong> will be in effect. Cancellation fee's represent the greater of either $200 or 25% of your job total. When a job is cancelled within four hours of the job starting time, you will be committed to the job total.</p>
+    </container>
     <spacer size="30"></spacer>
+    <container>
+        <center>
+        <button target="_blank" href="#" class="text-uppercase btn-green">Confirm Booking</button>
+        </center>
+    </container>
+    <spacer></spacer>
     <center>
-        <button target="_blank" href="https://www.rentason.ca/request-a-quote/" class="text-uppercase btn-green">Get Estimate</button>
+        <p class="text-center text-bold">${Users.First Name}</p>
+        <p class="text-center">${Users.Phone}</p>
     </center>
-    
+    <spacer></spacer>
+    <center>
+    <a style="text-decoration: underline;" href="#">If the above link does not work, click here or reply via email</a>
+    </center>
+    <spacer></spacer>
 </wrapper>
