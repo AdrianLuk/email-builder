@@ -33,9 +33,15 @@ body {
 }
 h1, h2, h3, h4, h5, h6, p{
   margin-bottom: 0;
+  color: $navy;
 }
 h1{
   font-size: 1.3rem;
+  
+}
+.thank-you-title{
+  font-size: 1.8rem;
+  color: $navy;
 }
 .blog-title{
   font-size: 1.1rem;
@@ -68,6 +74,9 @@ th.columns{padding-bottom: 0;}
   }
   &-off-white{
     background: $off-white !important;
+  }
+  &-rectangle-blue{
+    background: lighten($ras-blue, 5%)!important;
   }
 }
 .btn{
@@ -109,12 +118,30 @@ th.columns{padding-bottom: 0;}
   &-pink{
     color: $pink;
   }
-  &-uppercase{
-  text-transform: uppercase;
-  }
   &-navy{
     color: $navy;
   } 
+  &-uppercase{
+  text-transform: uppercase;
+  }
+  &-bold{
+    font-weight: bold;
+  }
+  &-1rem{
+    font-size: 1rem;
+  }
+  &-1-25rem{
+    font-size: 1.25rem;
+  }
+  &-1-5rem{
+    font-size: 1.5rem;
+  }
+  &-1-75rem{
+    font-size: 1.75rem;
+  }
+  &-2rem{
+    font-size: 2rem;
+  }
 }
 
 .p{
@@ -128,9 +155,19 @@ th.columns{padding-bottom: 0;}
 .w-100{
   width: 100% !important;
 }
-.mw-500 {
-  max-width: 500px;
-  margin: auto;
+.mw{
+  &-300{
+    max-width: 300px;
+    margin: auto;
+  }
+  &-400{
+    max-width: 400px;
+    margin: auto;
+  }
+  &-500 {
+    max-width: 500px;
+    margin: auto;
+  }
 }
 // Make everything here important, or else it won't override your inlined styles
 @media only screen and (max-width: #{$global-breakpoint}) {

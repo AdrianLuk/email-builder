@@ -1,8 +1,8 @@
 ---
 layout: default
-subject: Reservation Cancelled
-description: Cancelled Sales Order
-header: Your Reservation Is Now Cancelled
+subject: Rescheduled Reservation
+description: Details for your Rescheduled Reservation
+header: Your Reservation Has Been Rescheduled
 ---
 
 <wrapper>
@@ -15,7 +15,7 @@ header: Your Reservation Is Now Cancelled
     </container>
     <spacer size="30"></spacer>
     <container>
-        <center>We are sorry to hear that you will no longer be requiring our services. We thank you for considering Rent-a-Son for your moving needs and wish you all the best!</center>
+        <center>You are receiving this email because you have made a change to the date or start time of your reservation. Please review the new job details below.</center>
     </container>
     <spacer size="30"></spacer>
     <container class="bg-blue">
@@ -23,30 +23,27 @@ header: Your Reservation Is Now Cancelled
         <center>
             <row>
             <columns class="py-5" small="12">
-            <h2 class="text-center text-white text-uppercase"><strong>Job And Cancellation Details:</strong></h2>
+            <h2 class="text-center text-white text-uppercase"><strong>New Reservation Details:</strong></h2>
             </columns>
             </row>
         </center>
         <spacer size="30"></spacer>
-        <p class="text-white text-center"><strong class="text-uppercase">NAME:</strong> ${Contact.First Name} ${Contacts.Last Name}</p>
-        <spacer size="20"></spacer>
         <p class="text-white text-center"><strong class="text-uppercase">Job Date:</strong> ${Sales Orders.Job Date}</p>
         <spacer size="20"></spacer>
         <p class="text-white text-center"><strong class="text-uppercase">Start Time:</strong> ${Sales Orders.Job Start Time}</p>
         <spacer size="20"></spacer>
         <p class="text-white text-center"><strong class="text-uppercase">Job Minimum:</strong> ${Sales Orders.Job Legth Minimum}</p>
         <spacer></spacer>
-        <p class="text-white text-center"><strong class="text-uppercase">Cancellation Fee:</strong> $${Sales Orders.Cancel/Resch Amount}</p>
+        <p class="text-white text-center"><strong class="text-uppercase">Rescheduling Fee:</strong> $${Sales Orders.Cancel/Resch Amount}</p>
         <spacer size="30"></spacer>
     </container>
     <spacer size="30"></spacer>
     <container>
-    <p style="font-style: italic;" class="text-center text-pink">*Your cancellation fee will be charged to the credit card we have on file.</p>
+    <p style="font-style: italic;" class="text-center text-pink">*Your rescheduling fee will be added to your move date invoice.</p>
     </container>
     <spacer size="30"></spacer>
-    
     <container>
-    <p class="text-center">If you have any questions about your cancellation please contact ${Users.First Name} at <a href="tel:416-913-9021">416-913-9021</a> to discuss any time during regular business hours.</p>
+    <p class="text-center">If you have any questions about your reservation please contact ${Users.First Name} at <a href="tel:416-913-9021">416-913-9021</a> to discuss any time during regular business hours.</p>
     </container>
     <spacer size="30"></spacer>
 </wrapper>
